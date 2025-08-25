@@ -1,0 +1,163 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #262626;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+.header-section {
+  background-image: url("images/Gym_Header.jpg");
+  padding: 20px 0;
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 200px;
+  margin-bottom: 10px;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+nav ul li a:hover {
+  color: red;
+}
+
+nav ul li a::after {
+  content: "";
+  height: 2px;
+  width: 0;
+  background: red;
+  display: block;
+  transition: 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav ul li a.active {
+  color: red;
+}
+
+.section-title {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.class-category {
+  margin: 40px auto;
+  padding: 0 20px;
+  max-width: 1200px;
+}
+
+.category-title {
+  font-size: 28px;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  border-left: 6px solid #f39c12;
+  padding-left: 12px;
+  margin-bottom: 25px;
+}
+
+.classes-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.class-card {
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 5px 15px #0000001a;
+  transition: transform 0.3s ease;
+}
+
+.class-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 7px 16px #931fff;
+}
+
+.class-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.class-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.class-content h4 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.class-content p {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.book-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 20px;
+  background-color: #f39c12;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.book-btn:hover {
+  background-color: #d9820f;
+}
+
+.rating {
+  font-size: 18px;
+  color: #f39c12;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}

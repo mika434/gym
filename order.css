@@ -1,0 +1,131 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #262626;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+/* Header styling */
+.header-section {
+    background-image: url("images/Gym_Header.jpg");
+    padding: 20px 0;
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: red;
+}
+
+nav ul li a::after {
+    content: "";
+    height: 2px;
+    width: 0;
+    background: red;
+    display: block;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Order Form */
+.order-form-section {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #1f1f1f;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px #00000066;
+}
+
+.order-form-section h2 {
+    text-align: center;
+    color: #e53935;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+.order-form-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-form-section label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.order-form-section input,
+.order-form-section textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+.order-form-section textarea {
+    resize: none;
+}
+
+.order-form-section button {
+    padding: 12px;
+    background-color: #e53935;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.order-form-section button:hover {
+    background-color: #ff4c4c;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}

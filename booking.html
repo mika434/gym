@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prime League | Book a Class</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="booking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-section">
+        <div class="container header-nav">
+            <a href="index.html" class="logo">
+                <img src="images/PrimeLeagueLogo.jpg" alt="Prime League Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="classes.html" class="active">Classes</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Booking Form -->
+    <main>
+        <section class="booking-form-section">
+            <h2>Book a Class</h2>
+            <p>Select a class and schedule your session with us today!</p>
+
+            <form action="mailto:primeleaguefit@gmail.com" method="POST" enctype="text/plain" class="booking-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="class">Class Category:</label>
+                <select id="class" required>
+                    <option value="">-- Choose a class category --</option>
+                    <option value="Personal Training">Personal Training</option>
+                    <option value="Virtual Online Class">Virtual Online Class</option>
+                    <option value="Senior Fitness">Senior Fitness</option>
+                </select>
+
+                <label for="class">Select Class:</label>
+                <select>
+                    <option value="">-- Choose a class --</option>
+                    <option value="HIIT">HIIT</option>
+                    <option value="Spinning Class">Spinning Class</option>
+                    <option value="Strength Coaching">Strength Coaching</option>
+                    <option value="Sport Recovery">Sport Recovery</option>
+                    <option value="TRX Suspension">TRX Suspension</option>
+                    <option value="Live HIIT (Online)">Live HIIT (Online)</option>
+                    <option value="Zoom Yoga">Zoom Yoga</option>
+                    <option value="Chair Yoga">Chair Yoga</option>
+                    <option value="Joint Mobility">Joint Mobility</option>
+                </select>
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="message">Additional Notes:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Any specific request or note?"></textarea>
+
+                <button type="submit" class="book-button">Submit Booking</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Prime League. All rights reserved.</p>
+    </footer>
+
+    <!-- Background Audio -->
+     <audio autoplay loop>
+        <source src="summer.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+     </audio>
+</body>
+</html>

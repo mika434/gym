@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime League | Order Product</title>
+    <link rel="stylesheet" href="order.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-section">
+        <div class="container header-nav">
+            <a href="index.html" class="logo">
+                <img src="images/PrimeLeagueLogo.jpg" alt="Prime League Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Order Form Section -->
+    <main>
+        <section class="order-form-section">
+            <div class="container">
+                <h2>Order Product</h2>
+                <form action="mailto:primeleaguefit@gmail.com" method="POST" enctype="text/plain">
+                    <label for="product">Product Name</label>
+                    <input type="text" id="product" name="product" readonly>
+
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                    <label for="quantity">Quantity</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+                    <label for="message">Additional Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Any requests? (Optional)"></textarea>
+
+                    <button type="submit">Place Order</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Prime League. All rights reserved.</p>
+    </footer>
+
+    <!-- Background Audio -->
+     <audio autoplay loop>
+        <source src="summer.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+     </audio>
+
+    <script>
+        // Autofill product name from URL query
+        const urlParams = new URLSearchParams(window.location.search);
+        const product = urlParams.get('product');
+        if (product) {
+            document.getElementById('product').value = decodeURIComponent(product);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-color: #262626;
+  color: white;
+}
+
+main {
+  padding: 40px 20px;
+}
+
+.header-section {
+  background-image: url("images/Gym_Header.jpg");
+  padding: 20px 0;
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 200px;
+  margin-bottom: 10px;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav ul {
+  display: flex; /* Turn ul into flex to control spacing of li */
+  gap: 40px; /* Consistent space between menu items */
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none; /* Remove underline from the links */
+  color: white;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+nav ul li a:hover {
+  color: red;
+}
+
+/* Styling the underline effect for menu items on hover */
+nav ul li a::after {
+  content: "";
+  height: 2px;
+  width: 0;
+  background: red;
+  display: block;
+  transition: 0.3s ease;
+}
+
+/* Styling the underline effect for menu items on hover */
+nav ul li a:hover::after {
+  width: 100%; /* Expand width of underline on hover */
+}
+
+nav ul li a.active {
+  color: red;
+}
+
+/* Headings */
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: #e53935;
+}
+
+/* Product Grid Layout */
+.product-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+  margin-bottom: 80px;
+  padding: 0 20px;
+}
+
+/* Individual Product Card */
+.product-card {
+  background-color: #1f1f1f;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 6px 12px #00000066;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px #ff000080;
+}
+
+.product-card img:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.product-card b {
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.product-card div {
+  margin-bottom: 5px;
+  font-size: 0.95rem;
+  color: white;
+}
+
+.order-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #e53935;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.order-btn:hover {
+  background-color: #ff4c4c;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
